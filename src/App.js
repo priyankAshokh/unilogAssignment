@@ -59,7 +59,7 @@ function App() {
   useEffect(() => {
     const result = modifyData(data.root)
     setNewData(result)
-  })
+  }, [data.root])
 
   return (
     <div className="App">
